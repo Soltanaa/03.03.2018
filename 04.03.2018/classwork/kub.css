@@ -1,0 +1,77 @@
+*{
+
+}
+
+div{
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+.blue{
+    background: blue;
+    width: 100px;
+    height: 100px;
+    animation: change 4s linear infinite;
+    animation-delay: 3s;
+    position: absolute;
+    
+}
+.red{
+    background: red;
+    width: 100px;
+    height: 100px;
+    animation: change 4s linear infinite;
+    animation-delay: 2s;
+    position: absolute;
+   
+}
+.yellow{
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    animation: change 4s linear infinite;
+    animation-delay: 1s;
+    position: absolute;
+   
+}
+.green{
+    background: green;
+    width: 100px;
+    height: 100px;
+    animation: change 4s linear infinite;
+    animation-delay: 0s;
+    position: absolute;
+}
+    
+
+
+@keyframes change{
+0%{
+    background-color: blue;
+    transform: translate(0px,0px) rotate(0deg);
+}
+
+25%{
+    background-color:red;
+    transform: translate(200px,0px) rotate(90deg);
+}
+
+50%{
+    background-color:yellow;
+    transform: translate(200px,200px) rotate(180deg);
+    
+}
+75%{
+    background-color:green;
+    transform: translate(0px,200px) rotate(270deg);
+    
+}
+100%{
+    background-color:blue;
+    transform: translate(0px,0px) rotate(360deg);
+    
+}
+}
+
+
